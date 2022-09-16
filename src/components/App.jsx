@@ -1,18 +1,21 @@
 import React, { useState } from 'react';
 import { Routes, Route } from 'react-router-dom';
-import Modal from './Modal';
+
 import Video from './Video';
+import OneCord from './OneCord';
+import About from './About';
 
 export default function App({ initState }) {
-  const [modalActive, setModalActive] = useState(false);
-  console.log('APP:', modalActive);
+  const [modalRegActive, setModalRegActive] = useState(false);
+  const [modalInActive, setModalInActive] = useState(false);
   return (
     <>
       <Routes>
-        <Route path="/" element={<Video path="/" setActive={setModalActive} />} />
+        <Route path="/" element={<Video path="/" setActiveIn={setModalInActive} activeIn={modalInActive} activReg={modalRegActive} setActiveReg={setModalRegActive} />} />
       </Routes>
 
-      <Modal active={modalActive} setActive={setModalActive} />
+      <About active={modalRegActive} setActive={setModalRegActive} />
+      <OneCord active={modalInActive} setActive={setModalInActive} />
     </>
   );
 }

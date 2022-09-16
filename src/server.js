@@ -27,6 +27,12 @@ const sessionConfig = {
     httpOnly: true,
   },
 };
+// app.use(
+//   helmet({
+//     crossOriginEmbedderPolicy: false,
+//     // ...
+//   })
+// );
 app.use(express.static('public'));
 app.use(morgan('dev'));
 app.use(express.urlencoded({ extended: true }));

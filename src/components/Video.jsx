@@ -1,8 +1,15 @@
 import React from 'react';
-import Modal from './Modal';
+import Modal from './About';
 
-export default function Video({ setActive }) {
-  const clickHandler = () => setActive(true);
+export default function Video({
+  setActiveIn, setActiveReg,
+}) {
+  const clickHandlerIn = () => {
+    setActiveIn(true);
+  };
+  const clickHandlerReg = () => {
+    setActiveReg(true);
+  };
 
   return (
     <div className="body_video">
@@ -13,8 +20,8 @@ export default function Video({ setActive }) {
       <video poster="video/preVideo.png" autoPlay muted loop preload="auto" className="full-screen__video">
         <source type="video/mp4" src="/video/Cord.webm" />
       </video>
-      <div className="btn reg from-left">Регистрация</div>
-      <div onKeyPress={clickHandler} tabIndex={0} role="button" className="btn in from-right open-btn">Войти</div>
+      <div onClick={clickHandlerReg} className="btn reg from-left">Контакты</div>
+      <div onClick={clickHandlerIn} className="btn in from-right open-btn">Найти аккорд</div>
 
     </div>
 
