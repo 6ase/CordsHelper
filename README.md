@@ -13,7 +13,7 @@
 
 ## Запуск
 
-Рекомендуется запускать на [Node.js](https://nodejs.org/) не ниже v10+
+Рекомендуется использовать [Node.js](https://nodejs.org/) не ниже v10+
 
 Install the dependencies and devDependencies and start the server.
 
