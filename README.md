@@ -1,5 +1,5 @@
 # Chords helper
-## Небольшое приложение для поиска аккордов
+## Приложение для поиска аккордов
 
 [![N|Solid](https://raw.githubusercontent.com/6ase/CordsHelper/main/prev.png)](https://raw.githubusercontent.com/6ase/CordsHelper/main/prev.png)
 
@@ -13,9 +13,9 @@
 
 ## Запуск
 
-Рекомендуется использовать [Node.js](https://nodejs.org/) не ниже v10+
+Рекомендуется использовать [Node.js](https://nodejs.org/) не ниже v16+
 
-Install the dependencies and devDependencies and start the server.
+Установите зависимости и devDependencies и запустите сервер.
 
 ```sh
 npm i
